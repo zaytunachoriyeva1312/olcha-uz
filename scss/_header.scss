@@ -1,0 +1,181 @@
+.header{
+    &-top{
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+    }
+    &__lang{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        
+    }
+    &__lang-btn{
+        border: none;
+        background-color: transparent;
+        line-height: 23px;
+        color: $grey;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+    &__lang-btn:hover{
+        color: $red;
+        transition: all 0.3s ease;
+    }
+    .active{
+        color: $red;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 480px;
+        gap: 20px;
+    }
+    &__item{
+        
+        list-style-type: none;
+    }
+    &__list-link{
+        text-decoration: none;
+        line-height: 23px;
+        color: $grey;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+    &__list-link:hover{
+        color: $red;
+        transition: all 0.3s ease;
+    }
+    &__top-mode{
+        display: flex;
+        margin-left: 20px;
+    }
+    &__top-text{
+        margin: 0;
+        line-height: 23px;
+        color: $grey;
+    }
+
+}
+.switch{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 33px;
+    height: 19px;
+    border: 1px solid $grey;
+    border-radius: 9.5px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+
+}
+.switch-input:checked + .switch{
+    background-color: $red;
+    border: 1px solid $red;
+}
+.switch-input:checked + .switch::before{
+    right: 4px;
+    left: auto;
+    background-color: white;
+}
+.switch::before{
+    display: inline-block;
+    content:" ";
+    width:11px;
+    height: 11px;
+    background-color: $grey;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    transition: all 0.3s ease;
+}
+.line{
+    color: $grey;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    padding: 15px 0 25px 0;
+    &__select{
+        background-color: $red;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 6px;
+        margin-left: 61px;
+    }
+    &__input{
+        margin-left: 60px;
+        position: relative;
+        color: $grey;
+        border: 1px solid $grey;
+        border-radius: 6px;
+        padding: 16px 20px;
+        width: 444px;
+    }
+    &__btn{
+        position: absolute;
+        left: 875px;
+        top: 75px;
+        background-image: url(../img/Vector.svg);
+        background-color: $red;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        padding: 20px;
+        border: none;
+        background-position: center;
+        border-radius: 6px;
+    
+    }
+    &__link{
+        margin-left: 40px;
+        text-decoration: none;
+        color: $black;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        line-height: 140%;
+    }
+    &__link:hover{
+        color: $red;
+    }
+
+  
+    
+}
+.nav{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        list-style-type: none;
+    }
+    &__link{
+        line-height: 140%;
+        color: $black;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        text-decoration: none;
+    }
+    &__link:hover{
+        background: #ECF1F4;
+        border-radius: 6px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        color: $red;
+        padding: 5px 8px;
+    }
+}
